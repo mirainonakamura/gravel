@@ -1,0 +1,189 @@
+.m-o {
+    margin: 100px auto 70px auto;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.lead {
+    font-size: 1.1rem;
+}
+
+.l-head {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #5a5a5a;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #dcdcdc;/*左線*/
+}
+
+/*a {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.news-link {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    transition: .3s;*/
+/*}*/
+/*.news-link::after {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    content: '';*/
+/*    width: 0;*/
+/*    height: 1px;*/
+/*    background-color: #2ecc71;*/
+/*    transition: .3s;*/
+/*}*/
+/*.news-link:hover::after {*/
+/*    width: 100%;*/
+/*}*/
+
+/*========= ▼ main visual =========*/
+.jumbotron-extend{
+    position: relative;
+    height: 100vh;
+    max-height: 600px;
+    min-height: 300px;
+    background:url(../images/ovidiu-gruescu-iweAUkeasnk-unsplash.jpg);
+    background-size:cover
+}
+.jumbotron-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/*========= ▼ main scroll =========*/
+.scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+    padding-top: 70px;
+    color: #d3d9df;
+}
+
+.scroll span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+
+
+/*========= ▼ お問い合わせフォーム送信ボタン上の矢印 =========*/
+.cp_arrows *, .cp_arrows *:before, .cp_arrows *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cp_arrows {
+    position: relative;
+    display: flex;
+    height: 50px;
+    margin: 1em auto;
+    justify-content: center;
+    align-items: center;
+}
+.cp_arrows .cp_arrow,
+.cp_arrows .cp_arrow:before {
+    position: absolute;
+    left: calc(50% - 10px);
+    content: '';
+}
+.cp_arrows .cp_arrow {
+    top: calc(50% - 18px);
+    width: 26px;
+    height: 26px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    border-color: transparent #17a2b8 #17a2b8 transparent;
+}
+.cp_arrows .cp_arrow:before {
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    -webkit-animation: arrow-move10 2s infinite ease-in-out;
+    animation: arrow-move10 2s infinite ease-in-out;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: transparent #17a2b8 #17a2b8 transparent;
+}
+@-webkit-keyframes arrow-move10 {
+    0% {
+        opacity: 0.3;
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-8px, -8px);
+        opacity: 0;
+    }
+}
+@keyframes arrow-move10 {
+    0% {
+        opacity: 0.3;
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-8px, -8px);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
